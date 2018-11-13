@@ -85,10 +85,54 @@ body {
 <body>
 
 <IMG src = 'baseball.jpeg'> </IMG> 
-<caption>Baseball</caption>
+
 
 <IMG src = 'chinesetaipei.jpeg'> </IMG>
-<caption>Chinese Taipei (aka Taiwan) Baseball Team </caption> 
+
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+	<div class="column">
+    <img src="chinesetaipei.jpeg" style="width:100%">
+    <img src="baseball.jpeg" style="width:100%">
+</div> 
+
+
 
 
 
