@@ -20,17 +20,74 @@ Traditional Chinese characters are currently used in Taiwan, Hong Kong, and Maca
 
 The debate on traditional and simplified Chinese characters has been a long-running issue among Chinese communities.
 Taiwan has never adopted simplified characters. Some stroke simplifications that have been incorporated into Simplified Chinese are in common use in handwriting. For example, while the name of Taiwan is written as 臺灣, the semi-simplified name 台灣 is also acceptable to write in official documents.  </p> 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Times New Roman, Times, serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Image Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-      <img src="hello.png" alt="Hello" style="width:300px;height:200px">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
     </div>
     <div class="flip-box-back">
-      <h2>Ni Hao 你好</h2>
-      <p>Ni Hao means hello in English</p>
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
     </div>
   </div>
 </div>
+
+</body>
+</html>
+
 
 <h2> ---Hakka--- </h2> 
 
