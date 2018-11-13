@@ -206,10 +206,10 @@ body {
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-      <img src="howareyou.jpg" alt="How Are You and Are You Full" style="width:300px;height:200px">
+      <img src="howareyou.JPG" alt="How Are You and Are You Full" style="width:300px;height:200px">
     </div>
     <div class="flip-box-back">
-      <h2>Nǐ chī bǎole me?</h2>
+      <h2>Nǐ chī bǎole me? 你吃飽了沒？ </h2>
       <p>This phrase have two meanings, one being people asking you "How are you", the other being "Are you Full?". The uses are quite complicated, even native speakers get confused too. (If you understand Taiwanese, I bet you it's easy for you to understand the meaning.</p>
     </div>
   </div>
@@ -275,8 +275,75 @@ body {
       <img src="sorry.jpeg" alt="Sorry" style="width:300px;height:200px">
     </div>
     <div class="flip-box-back">
-      <h2>Bàoqiàn</h2>
-      <p>A more formal way of saying "Due bu Chi" which also means sorry. </p>
+      <h2>Bàoqiàn 抱歉/ duì bù q 對不起</h2>
+      <p>A more formal way of saying "Due bu q" which also means sorry.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Times New Roman, Times, serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="thankyou.jpg" alt="Thank You" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>xieˋxie˙  謝謝</h2>
+      <p>Xie Xie means thank you in english to express your gratitude in a polite way, like japanese, you can add "very", "so much" into the phrase too. </p>
     </div>
   </div>
 </div>
